@@ -1,0 +1,116 @@
+@media (max-width: 1100px) {
+  .parent {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-rows: none;
+    grid-auto-rows: auto;
+    grid-column-gap: 20px;
+    grid-row-gap: 16px;
+    padding: 20px 88px 24px 20px;
+  }
+
+  .header {
+    grid-column: 1 / -1;
+    margin: 0;
+  }
+
+  .sider {
+    grid-area: auto;
+    width: 64px;
+    align-items: center;
+    padding: 16px 10px;
+  }
+
+  .sider > .disflex {
+    justify-content: center;
+  }
+
+  .sider > p,
+  .sider .kalam {
+    display: none;
+  }
+
+  .side-nav,
+  .side-actions {
+    align-items: center;
+    width: 100%;
+  }
+
+  .brand-mark,
+  .nav-item {
+    width: 44px;
+  }
+
+  .nav-item > .disflex {
+    justify-content: center;
+    padding: 0;
+  }
+
+  .raseed,
+  .dakhl,
+  .masrofat,
+  .activities,
+  .fawateer,
+  .recent-act,
+  .balance,
+  .income,
+  .summary,
+  .pay {
+    grid-area: auto;
+  }
+}
+
+@media (max-width: 700px) {
+  .parent {
+    grid-template-columns: minmax(0, 1fr);
+    grid-row-gap: 14px;
+    padding: 16px 16px 84px;
+  }
+
+  .header {
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 14px;
+    padding: 0;
+  }
+
+  .user-tools {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .bill-list {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .sider {
+    top: auto;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px 12px;
+    border-top: 1px solid #edf0f3;
+    border-left: 0;
+    overflow: visible;
+  }
+
+  .sider > .disflex,
+  .side-actions {
+    display: none;
+  }
+
+  .side-nav {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 4px;
+  }
+
+  .nav-item {
+    width: 40px;
+    height: 40px;
+  }
+}
